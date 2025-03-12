@@ -1,17 +1,14 @@
 package com.example.supportingdocuments.entity;
 
 import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 public class AdditionalDocument extends BaseDocument {
     private String additionalInfo;
 
-    // Getters and setters
-    public String getAdditionalInfo() {
-        return additionalInfo;
-    }
-
-    public void setAdditionalInfo(String additionalInfo) {
-        this.additionalInfo = additionalInfo;
-    }
+    // Lombok will generate getters and setters
 }

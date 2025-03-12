@@ -14,7 +14,7 @@ import java.util.Optional;
 public class SupportingDocumentController {
 
     @Autowired
-    private SupportingDocumentService service;
+    private SupportingDocumentService<SupportingDocument> service;
 
     @PostMapping
     public SupportingDocument createDocument(@RequestBody SupportingDocument document) {

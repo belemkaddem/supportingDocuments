@@ -21,4 +21,10 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="2" author="yourname">
+        <addColumn tableName="supporting_document">
+            <column name="document_type" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>
